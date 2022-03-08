@@ -1,0 +1,21 @@
+.b-product-single {
+ 
+    &__main {
+      @media screen and (min-width: 991px) {
+        display: grid;
+        grid-template-columns: 1fr 250px;
+        grid-column-gap: var(--large-margin);
+      }
+    }
+    
+    &__image-wrapper {
+      text-align: right;
+      overflow: hidden;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: scale-down;
+      }
+    }
+  }
